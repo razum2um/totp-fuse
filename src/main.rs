@@ -172,6 +172,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         MountOption::RO,
         MountOption::Sync,
         MountOption::AutoUnmount,
+        MountOption::AllowRoot,
         MountOption::FSName(args.filename.clone()),
     ];
     if args.noubc {
