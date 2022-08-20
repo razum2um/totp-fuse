@@ -1,0 +1,11 @@
+[package]
+name = "totp-fuse"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "3.2.17", features = ["derive"] }
+fuser = "0.11.0"
+koibumi-base32 = "0.0.2"
+libc = "0.2.132"
+totp-lite = "2.0.0"
