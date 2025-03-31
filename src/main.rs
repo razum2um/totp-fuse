@@ -126,7 +126,7 @@ impl Filesystem for AuthUserPass {
             let totp = totp_custom::<Sha1>(
                 DEFAULT_STEP,
                 6,
-                &base32::decode(&self.secret.trim().to_lowercase()).unwrap(),
+                &base32::decode(self.secret.trim().to_lowercase()).unwrap(),
                 seconds,
             );
             let content = format!("{}\n{}\n", &self.username, &totp);
